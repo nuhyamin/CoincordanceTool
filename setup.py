@@ -15,7 +15,7 @@ executables = [
 
 setup(name='NYConc 0.1',
       version='0.1',
-      options={"build_exe":{"packages":["wx"],"include_files":["dictionary.ico", "Fiction"]}},
+      options={"build_exe":{"packages":["wx"],"include_files":["dictionary.ico", "Dicks, Terrance - [Target Novelisations 10, Doctor Who] - Dr Who and the Claws of Axos ( Target).txt"]}},
       description='Concordance tool',
       executables=executables
       )
