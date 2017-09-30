@@ -6,7 +6,7 @@ import glob
 import re
 import sys
 
-class TextEditor(wx.Frame):
+class Concordance(wx.Frame):
 	def __init__(self, *args, **kwargs):
 		super().__init__(*args, **kwargs)
 		self.InitUI()
@@ -153,7 +153,7 @@ class TextEditor(wx.Frame):
 
 def main():
 	app=wx.App()
-	TextEditor(None)
+	Concordance(None)
 	app.MainLoop()
 
 if __name__ == '__main__':
