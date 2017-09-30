@@ -80,7 +80,7 @@ class TextEditor(wx.Frame):
 		pattern1=re.compile(r'.{30} '+self.entry.GetValue()+r' .{30}', re.DOTALL)
 		self.tree.DeleteAllItems()
 		self.text.Clear()
-		self.path=(os.getcwd()+'\Fiction')
+		self.path=(os.getcwd())
 		for filename in glob.glob(os.path.join(self.path, '*.txt')):
 			try:
 				file=open(filename, 'r')
@@ -122,7 +122,7 @@ class TextEditor(wx.Frame):
 		n=0
 		self.stop1=True
 		data=self.tree.GetItemText(self.tree.GetSelection())
-		file=open(os.getcwd()+'/Fiction/'+data, 'r')
+		file=open(os.getcwd()+data, 'r')
 		read_file=file.read()
 		file.close()
 		find_pattern=re.findall(r'.{30} '+self.entry.GetValue()+r' .{30}', read_file, re.DOTALL)
