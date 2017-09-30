@@ -10,7 +10,7 @@ if sys.platform == 'win32':
     base = 'Win32GUI'
 
 executables = [
-    Executable('texteditor.py', base=base, icon="dictionary.ico")
+    Executable('ConcordanceTool.py', base=base, icon="dictionary.ico")
 ]
 
 setup(name='NYConc 0.1',
